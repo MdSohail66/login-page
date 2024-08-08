@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: floralwhite;
+  }
+  .icons a {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0 10px 10px black;
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s;
+  }
+  .icons a:nth-child(1) {
+    color: #1093ee;
+    background-image: linear-gradient(white 50%, #1093ee 50%);
+    border-radius: 50%;
+  }
+  .icons a:nth-child(2) {
+    color: #f70000;
+    background-image: linear-gradient(white 50%, #f70000 50%);
+    border-radius: 38%;
+    width: 110px;
+    height: 100px;
+  }
+  .icons a:nth-child(3) {
+    color: #6fa72e;
+    background-image: linear-gradient(white 50%, orange 50%);
+    border-radius: 50%;
+  }
+  .icons a:hover {
+    background-position: 0% 100%;
+    color: white;
+  }

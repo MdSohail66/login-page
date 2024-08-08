@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .login-wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 960px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-side {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-header {
+            margin-bottom: 20px;
+        }
+        .login-header img {
+            width: 120px;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-btn {
+            width: 100%;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background-color: #165eab;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #1877f2;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer span {
+            color: #65676b;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="left-side">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="logo">
+            <p class="tagline">Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="right-side">
+            <div class="login-header">
+                <h1>Facebook</h1>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="Email or Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="login-btn">Log In</button>
+                </div>
+            </form>
+            <div class="footer">
+                <a href="#">Forgotten account?</a>
+                <span>·</span>
+                <a href="#">Sign up for Facebook</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

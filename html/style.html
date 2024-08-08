@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="logo">
+            <h1>Facebook</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="Email or Phone Number" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="login-btn">Log In</button>
+            </div>
+        </form>
+        <div class="login-with-google">
+            <button onclick="openGoogleLogin()" class="google-btn">Login with Google</button>
+        </div>
+        <div class="footer">
+            <a href="#">Forgotten account?</a>
+            <span>·</span>
+            <a href="#">Sign up for Facebook</a>
+        </div>
+    </div>
+
+    <script>
+        function openGoogleLogin() {
+            window.open(
+                'https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token&scope=email',
+                'GoogleLogin',
+                'width=600,height=600,scrollbars=yes'
+            );
+        }
+    </script>
+</body>
+</html>
